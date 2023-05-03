@@ -1,3 +1,4 @@
+{.no_toc}
 # Ruby on Rails
 [Ruby-Base](RubyonRails/Ruby-base.md)
 [Mailer](RubyonRails/Mailer.md)
