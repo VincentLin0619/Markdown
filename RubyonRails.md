@@ -9,6 +9,8 @@
 [Gem](RubyonRails/Gem.md)
 [佈署到 Render](RubyonRails/佈署到Render.md)
 [API-Route](RubyonRails/API-Route.md)
+[ActiveStorage](/RubyonRails/ActiveStorage.md)
+[Rails7](/RubyonRails/Rails7.md)
 ________________________________________________________________
 [TOC]
 ________________________________________________________________
