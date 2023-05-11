@@ -3,9 +3,9 @@
 ________________________________
 [toc]
 ________________________________
-[物件的型別](Ruby-base/TypeOfObject.md)
-[Method,Block](Ruby-base/Method%26Block.md)
-[Class,Model](Ruby-base/Class%26Model.md)
+[物件的型別](https://hackmd.io/FUdLu18IQMmuktnvi3TW9g)</br>
+[Method,Block](https://hackmd.io/frjHmYnAQJu7eVt6_RkGNw)</br>
+[Class,Model](https://hackmd.io/olFTx4vXSuePrUEswC4ROw)</br>
 
 # 變數種類：
 | 類型 | 範例 | 預設值 | 說明 |
