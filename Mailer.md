@@ -1,5 +1,5 @@
 # Mailer
-[←回到上一頁](//RubyonRails.md)
+[TOC]
 
 起手式
 
@@ -33,11 +33,13 @@ config.action_mailer.raise_delivery_errors = true
   # rails_delivery_errors 設定為 false 可讓寄信時的錯誤被忽略，如果要 debug 就設 true
 ```
 
-mailgum登入後會給一串預設的資料，這裡選擇SMTP
+  - **mailgum登入後會給一串預設的資料，這裡選擇SMTP**
 
-![截圖 2022-09-06 下午4.02.26.png](Mailer/2022-09-06_26.png)
+![](https://hackmd.io/_uploads/S1CKs75E2.png)
 
-在config底下新增資料的yml檔，並且在.gitnore裡新增，為了在推送時排除掉自己的帳號密碼
+
+
+- **在config底下新增資料的yml檔，並且在.gitnore裡新增，為了在推送時排除掉自己的帳號密碼**
 
 ```ruby
 development:
@@ -58,16 +60,17 @@ production:
   enable_starttls_auto: true
 ```
 
-Mail初始化
+- **Mail初始化**
+
+![](https://hackmd.io/_uploads/rywIhXqV3.png)
 
 ```ruby
 rails g mailer UserMailer hello_user
 # 創建mailer的controller#hello_user這個方法及views
 ```
 
-![截圖 2022-09-06 下午4.05.36.png](Mailer/2022-09-06_36.png)
 
-### 在app/mailers底下找到新建的user_mailer.rb
+- **在app/mailers底下找到新建的user_mailer.rb**
 
 ```ruby
 class UserMailer < ApplicationMailer
@@ -86,9 +89,9 @@ class UserMailer < ApplicationMailer
 end
 ```
 
-### 在views底下的user_mailer裡面生成了一個html以及一個純文字的模板
+- **在views底下的user_mailer裡面生成了一個html以及一個純文字的模板**
 
-![截圖 2022-09-06 下午4.10.56.png](Mailer/2022-09-06_56.png)
+![](https://hackmd.io/_uploads/BJ40s7qN3.png)
 
 預先都不要更動，到rails console內測試看看
 
@@ -119,5 +122,4 @@ u1 = User.last
 u1.signed_in(expires_in: 15.minutes) # 設定15分鐘後失效
 u1.signed_in(expires_in: 15.minutes, purpose: "reset_password") #加上reset_password訊息到token裡
 ```
-
-![截圖 2022-09-09 下午2.42.16.png](Mailer/2022-09-09_16.png)
+![](https://hackmd.io/_uploads/Sy7G3Qc4n.png)
